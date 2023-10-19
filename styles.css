@@ -1,0 +1,95 @@
+p, h1, h3 {
+    text-align: center;
+}
+
+.Button-Text {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+button {
+    display: block;
+    font-size: 30px;
+    margin: 30px auto;
+    margin-bottom: 0px;
+    font-family: 'Exo 2', sans-serif;
+
+}
+
+.Homepage-Recipe {
+    background-color: #bbbe64;
+    margin: 50px auto;
+    padding: 50px;
+    width: 75%;
+}
+
+img {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: #f93943 solid 5px;
+}
+
+.Recipe-Image-Container {
+    background-color: #A491D3;
+    padding: 50px;
+    width: 1000px;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+
+#Homepage {
+    background-color: #90f1ef;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+h1 {
+    background-color: #f93943;
+    margin: 0px;
+    padding: 20px;
+}
+
+body {
+    margin: 0px;
+}
+
+.Recipe-Page {
+    background-color: #bbbe64;
+    font-family: 'Assistant', sans-serif;
+}
+
+ul, ol{
+    text-align: left;
+    margin: auto;
+    width: fit-content;
+}
+
+.Description {
+    background-color: #01295f;
+    color: white;   
+}
+
+.Ingredients{
+    background-color: #f93943;
+}
+
+.Instructions {
+    background-color: #90f1ef;
+
+}
+.Description, .Ingredients, .Instructions{
+    width: 1000px;
+    box-sizing: border-box;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* bbbe64 - citron
+01295f - royal blue
+f93943 - imperial red
+90f1ef - ice blue
+a491d3 - lavender */
+
