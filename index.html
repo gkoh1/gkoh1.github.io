@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Grant's Casino: Blackjack</title>
+    <title>Mr. Levine's Games - Title Page</title>
 </head>
-<body>
-    <div id="title-page">
-        <p>
-            Welcome to Grant's Casino! With our notriously petulant dealers and sketchy UI choices, we're sure that once you start playing, you'll never want to stop!
-        </p>
-        <p>
-            So, you want to play Blackjack, huh? Well, in case you need a reminder, here are the rules:
-        </p>
-        <ul>
-            <li> You start with two cards, hit draws another card</li>
-            <li> The dealer starts with two cards, one face down.</li>
-            <li> Once you stand, the dealer hits until their score is at least 17</li>
-            <li> Highest score under 22 wins. Dealer wins ties unless both players get 21, in which case it is a tie.</li>
-            <li> If you go over 21 (bust), you lose and the dealer doesn't play.</li>
-            <li> After the game is over, click reset to play again (you have no other choice . . .)</li>
-        </ul>
-        <div>
-        How many decks do you want to play with? <input type="number" name="Input a number of decks" id="numDecks"> 
-        <button id='play-button'><a href="game.html" onclick="initialize()"> Play!</a> </button>
+<body >
+    <div id="main-page">
+        <h1 id="main-page-header"> Mr. Levine's Assortment of Games </h1>
+        <div class = "row">
+            <div class="title-gamebox">
+                <img src="blackjack-cards/back.png" alt="blackjack" class="title-image">
+                <a href="games/blackjack-title.html">
+                    <button class="title-navbutton"> Blackjack </button>
+                </a>
+            </div>
+            <div class="title-gamebox">
+                <img src="misc-images/dice.jpg" alt="craps" class="title-image">
+                <a href="games/craps.html">
+                    <button class="title-navbutton"> Craps </button>
+                </a>
+            </div>
         </div>
-    </div>
-    <script type="text/javascript" src="initializer.js" ></script>
+        <div class = "row">
+            <div class="title-gamebox">
+                <img src="misc-images/roulette-wheel.svg.png" alt="roulette" class="title-image">
+                <a href="games/roulette.html">
+                    <button class="title-navbutton"> Roulette </button>
+                </a>
+            </div>
+            <div class="title-gamebox">
+                <img src="misc-images/computer.jpg" alt="simulator" class="title-image">
+                <a href="games/simulator.html">
+                    <button class="title-navbutton"> Simulator </button>
+                </a>
+            </div>
+        </div>
+    </div>  
+    <script type="text/javascript" src="script.js" ></script>
 </body>
 </html>

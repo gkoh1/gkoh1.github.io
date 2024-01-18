@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <title>Roulette</title>
+</head>
+<body>
+    <div class="win-box">
+        You've won/lost <span id="user-points">0</span> chips
+    </div>
+    <div id="big-header">
+        <h1> Roulette</h1>
+    </div>
+    <div class = "actions">
+        <button class="control-button" onclick="reset()">
+            Reset
+        </button>
+        <button class="control-button" onclick="rotate()">
+            Spin Wheel
+        </button>
+        <a class="nav-link" href="../index.html">
+            <button class="control-button">
+                Home
+            </button>
+        </a>
+    </div>
+    <div id="roulette-outline">
+        <div id="roulette-vertical-display">
+            <div class="betting-bar">
+                Wager: <input type="number" name="wager" id="roulette-wager">
+            </div>
+            <div class="betting-bar">
+                Type of bet: 
+                <!-- onchange from https://stackoverflow.com/questions/12080098/dropdown-using-javascript-onchange-->
+                <select name="original" id="roulette-bets" onchange="betChange()">
+                    <option value="Placeholder"> Choose a bet </option>
+                    <option value="0"> 0</option>
+                    <option value="00"> 00</option>
+                    <option value="number"> Single </option>
+                    <option value="split"> Split </option>
+                    <option value="top-row"> Top Row </option>
+                    <option value="street"> Street </option>
+                    <option value="corner"> Corner </option>
+                    <option value="double-street"> Double Street </option>
+                    <option value="trio"> Trio </option>
+                    <option value="top-line"> Top Line </option>
+                    <option value="high/low"> High/Low </option>
+                    <option value="color"> Color</option>
+                    <option value="dozen"> Dozen</option>
+                    <option value="column"> Column</option>
+                </select>
+                <div id="roulette-bet-info">
+
+                </div>
+            </div>
+            <div class="betting-bar">
+                Are you sure? <button class="control-button" onclick="addBet()">Place bet</button>
+            </div>
+            <img src="../misc-images/roulette-wheel.svg.png" alt="Roulette wheel" id="roulette-wheel">
+            <img src="../misc-images/arrow.png" alt="arrow" id="roulette-pointer">
+            <div id="roulette-rolled-number">
+            </div>
+        </div> 
+        <div class="bet-list" >
+            <h4 id="roulette-message-box">
+                Place your bets and click roll when you're done.
+            </h4>
+            <div id="roulette-list">
+                <div>
+                    Placed Bets:
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   
+    <script type="text/javascript" src="../roulette.js"></script>
+</body>
+</html>
